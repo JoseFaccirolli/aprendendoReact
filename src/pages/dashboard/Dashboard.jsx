@@ -38,7 +38,7 @@ function Piechart() {
             <Typography variant="h2" color="white" >Venda de ingressos online</Typography>
             <Box sx={{
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: {xs: "column", md: "row"},
                 width: "100%",
                 justifyContent: "center",
                 gap: 4,
@@ -57,7 +57,6 @@ function Piechart() {
                             data: ingressos // Dados que viriam da API
                             },
                         ]}
-                        width={400}
                         height={200}
                         sx={{
                             '& .MuiChartsLegend-label': {
